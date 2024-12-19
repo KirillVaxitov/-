@@ -1,0 +1,509 @@
+/* Общие стили */
+* {
+    box-sizing: border-box; /* Используем border-box для удобства расчета размеров */
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: #000000;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif; /* Устанавливаем стандартный шрифт */
+}
+
+/* Шапка сайта */
+.header {
+    background-color: #fff;
+    font-size: 16px;
+    padding: 10px 0;
+    text-align: left; /* Выравниваем текст по левому краю */
+    position: static; /* Убираем фиксацию шапки */
+    z-index: 2;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.3); /* Добавляем тень для шапки */
+    margin: 0 auto; /* Выравниваем по центру */
+    max-width: 1200px; /* Ограничиваем ширину шапки */
+}
+
+.mainColumn {
+    display: flex;
+    justify-content: space-between; /* Распределяем элементы по ширине */
+    align-items: center;
+    padding: 0 20px; /* Добавляем отступы для удобства */
+    max-width: 1200px; /* Ограничиваем ширину */
+    margin: 0 auto; /* Выравниваем по центру */
+}
+
+.head1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.orange_button {
+    background-color: #ffa019;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.orange_button:hover {
+    transform: skew(-8deg);
+}
+
+.orange_button:active {
+    transform: skew(-8deg);
+    opacity: 0.3;
+    background-color: #FFD219;
+}
+
+.head2 h2 {
+    display: flex;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+/* Основное изображение */
+.mainPicture {
+    width: 100%;
+    height: 100%;
+    background: url("Изображения/img1.jpg") no-repeat center center;
+    background-size: cover;
+    padding-top: 860px;
+    position: relative;
+    filter: brightness(40%);
+}
+
+.mainPictureFront {
+    position: absolute;
+    top:620px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+}
+
+.mainPictureFront #p1 {
+    font-size: 40px;
+}
+
+.mainPictureFront #p2,
+.mainPictureFront #p3 {
+    font-size: 20px;
+}
+
+.mainPictureFront button {
+    margin-top: 28px;
+    padding: 9px 30px;
+    border-radius: 15px;
+    font-weight: bold;
+    background-color: #ffa019;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Заголовки */
+.title {
+    font-size: 25px;
+    text-align: left; /* Выравниваем текст по левому краю */
+    padding: 50px 0;
+    max-width: 1200px; /* Ограничиваем ширину */
+    margin: 0 auto; /* Выравниваем по центру */
+}
+
+/* Стрелки */
+.arrowLeft,
+.arrowRight {
+    width: 3%;
+    height: 10%;
+    cursor: pointer;
+}
+
+.arrowLeft {
+    padding-left: 48%; /* Выравниваем по центру */
+}
+
+.arrowLeft:active,
+.arrowRight:active {
+    height: 50px;
+}
+
+/* Преимущества */
+.benefitsLine img {
+    padding-top: 30px;
+}
+
+.benStr1,
+.benStr2,
+.benStr3,
+.benStr4 {
+    padding-top: 20px;
+    text-align: left; /* Выравниваем текст по левому краю */
+    max-width: 1200px; /* Ограничиваем ширину */
+    margin: 0 auto; /* Выравниваем по центру */
+}
+
+/* О нас */
+.thirdPage {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Выравниваем по левому краю */
+    padding-bottom: 50px;
+    max-width: 1200px; /* Ограничиваем ширину */
+    margin: 0 auto; /* Выравниваем по центру */
+}
+
+.thirdPageP1,
+.thirdPageP2 {
+    font-size: 18px;
+    text-align: left; /* Выравниваем текст по левому краю */
+}
+
+.thirdPageP2 {
+    padding-bottom: 30px;
+}
+
+/* Оранжевая линия */
+.orangeLine {
+    background-color: #ffa019;
+    color: white;
+    padding: 20px 0;
+    text-align: left; /* Выравниваем текст по левому краю */
+    max-width: 5200px; /* Ограничиваем ширину */
+    margin: 0 auto; /* Выравниваем по центру */
+}
+
+.orangeLine input {
+    width: 270px;
+    height: 23px;
+    border: 1px solid white;
+    background-color: #ffa019;
+    margin: 10px;
+    color: white;
+}
+
+.orangeLine button {
+    background-color: white;
+    height: 23px;
+    border: 1px solid white;
+    padding: 0 25px;
+    color: black;
+    cursor: pointer;
+}
+
+/* Таблица */
+.table2 td {
+    width: 380px;
+    text-align: left; /* Выравниваем текст по левому краю */
+}
+
+/* Каталог */
+.all_button {
+    background-color: #ffa019;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.title_item {
+    font-size: 15px;
+    padding: 0 10px;
+}
+
+.imagesLine {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+    max-width: 1200px; /* Ограничиваем ширину */
+    margin: 0 auto; /* Выравниваем по центру */
+}
+
+.image {
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.3);
+    width: 180px;
+    height: 260px;
+    text-align: center;
+}
+
+.catalog img {
+    width: 120px;
+    height: 150px;
+}
+
+.price,
+.productName {
+    padding-left: 15px;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.orangeLabel {
+    height: 30px;
+    border-radius: 0 25px 25px 0;
+    background-color: #ffa019;
+    display: inline-block;
+    padding: 7px 12px;
+    margin-top: 12px;
+    color: white;
+}
+
+/* Консультанты */
+.consultant {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 270px;
+    height: 160px;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+
+.consultant img {
+    height: 100%;
+}
+
+.consultantName {
+    font-size: 20px;
+}
+
+.menegerLabel {
+    font-size: 12px;
+    font-style: italic;
+}
+
+.consultantButton {
+    background-color: #ffa019;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Бренды */
+.brends {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px 0;
+    background-color: #9b9b9b;
+    max-width: 5200px; /* Ограничиваем ширину */
+    margin: 0 auto; /* Выравниваем по центру */
+}
+
+.brends p {
+    font-size: 30px;
+    
+}
+
+/* Полезная информация */
+.useful_information {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px; /* Ограничиваем ширину */
+    margin: 0 auto; /* Выравниваем по центру */
+}
+
+.usefulPicture {
+    width: 200px;
+    height: 200px;
+    filter: brightness(40%);
+    background-size: cover;
+}
+
+.pic1 {
+    background: url("Изображения/use1.jpg");
+}
+
+.pic2 {
+    background: url("Изображения/use2.jpg");
+}
+
+.pic3 {
+    background: url("Изображения/use3.jpg");
+}
+
+.pic4 {
+    background: url("Изображения/use4.jpg");
+}
+
+.pic1front,
+.pic2front,
+.pic3front,
+.pic4front {
+    position: absolute;
+    color: white;
+    text-align: center;
+    top:398%;
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 100%
+}
+
+/* Подвал */
+.lastPage {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 10px;
+    background-color: #f4f4f4;
+    max-width: 5200px; /* Ограничиваем ширину */
+    margin: 0 auto; /* Выравниваем по центру */
+}
+
+.leftHalf {
+    width: 360px;
+}
+
+.leftHalf p {
+    padding-bottom: 15px;
+}
+
+#copyright {
+    padding-top: 10px;
+}
+
+.table2firstColumn,
+.table2secondColumn,
+.table2thirdColumn {
+    margin-top: 30px;
+}
+
+.table2title {
+    font-weight: bold;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 1450px) {
+    .mainColumn {
+        padding-left: 20px;
+    }
+
+    .imagesLine {
+        padding-right: 20px;
+    }
+
+    .mainPictureFront {
+        top: 130px;
+        left: 50%;
+    }
+}
+
+@media (max-width: 970px) {
+    .head2 h2,
+    .orangeLineLeftHalf {
+        display: none;
+    }
+
+    .head1 button {
+        margin-left: 170px;
+    }
+
+    .all_button {
+        margin-left: 250px;
+    }
+
+    .mainPictureFront {
+        left: 30px;
+    }
+
+    .mainPictureFront button {
+        margin-left: 240px;
+    }
+
+    .benefitsLine img,
+    .benefitsString p {
+        padding-left: 50px;
+    }
+
+    .lastPage {
+        padding-left: 30px;
+    }
+}
+
+@media (max-width: 780px) {
+    .imagesLine,
+    .benefitsLine {
+        display: block;
+        margin-left: 170px;
+    }
+
+    .all_button {
+        margin-left: 200px;
+    }
+
+    .brends p {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    .lastPage {
+        display: block;
+    }
+
+    .benefitsString p {
+        width: 50px;
+    }
+
+    .mainPictureFront {
+        left: 30px;
+    }
+
+    .mainPictureFront button {
+        margin-left: 240px;
+    }
+
+    .mainPicture {
+        padding-top: 700px;
+    }
+
+    .benefitsLine img {
+        padding-left: 10px;
+    }
+
+    .title {
+        padding-left: 30px;
+    }
+
+    .arrowLeft {
+        padding-left: 400px;
+    }
+}
+
+@media (max-width: 590px) {
+    .orangeLine button {
+        margin-left: 25px;
+    }
+
+    .all_button {
+        margin-left: 70px;
+    }
+
+    .mainPictureFront button {
+        margin-left: 170px;
+    }
+}
